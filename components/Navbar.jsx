@@ -1,13 +1,12 @@
-import React from "react";
 import Image from "next/image";
+import React from "react";
 import {
   Button,
   Container,
   Form,
   FormControl,
   Nav,
-  Navbar,
-  NavDropdown,
+  Navbar
 } from "react-bootstrap";
 import LogoImg from "../public/img/chris-plugin-store_logo.png";
 
