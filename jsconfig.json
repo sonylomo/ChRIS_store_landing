@@ -1,0 +1,6 @@
+// configure to use absolute paths when importing files
+{
+    "compilerOptions": {
+      "baseUrl": "."
+    }
+  }

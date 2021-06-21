@@ -1,0 +1,46 @@
+.welcomeCTA {
+  background-color: aliceblue;
+  height: 110vh;
+  padding-top: 4%;
+}
+
+.welcomeCTA_focus {
+  margin: 0 auto;
+  text-align: center;
+  width: 70vw;
+}
+
+.welcomeCTA_focus > h2 {
+  color: blue;
+}
+
+.welcomeCTA_youtube {
+  padding-top: 4%;
+
+  text-align: center;
+  width: 50vw;
+  margin: 0 auto;
+}
+
+.welcomeCTA_youtube > iframe {
+  width: 90%;
+  height: 200px;
+}
+
+.welcomeCTA_youtube > p {
+  font-size: 12px;
+}
+
+.welcomeCTA_chris {
+  text-align: justify;
+  width: 55vw;
+  margin: 0 auto;
+  padding-top: 3%;
+}
+
+.welcomeCTA_chris > p {
+  line-height: 1.5;
+}
+.welcomeCTA_chris > p > a {
+  text-decoration: none;
+}

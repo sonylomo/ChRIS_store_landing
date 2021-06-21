@@ -1,0 +1,21 @@
+.welcomeDevelopers {
+  height: 90vh;
+  padding: 3% 5%;
+}
+
+.welcomeDevelopers > h1 {
+  color: blue;
+  width: 50vw;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.welcomeDevelopers_text{
+    padding-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.welcomeDevelopers_text_left, .welcomeDevelopers_text_right{
+    width: 50%;
+}
