@@ -1,3 +1,19 @@
-.welcomeCategories{
-    height: 90vh;
+.welcomeCategories {
+  /* display */
+  padding-bottom: 1em;
+  height: fit-content;
+}
+
+.welcomeCategories > h2 {
+  padding-top: 3%;
+  text-align: center;
+  color: #0275d8;
+}
+
+.welcomeCategories_container > div {
+
+  margin: 6% 2%;
+  justify-content: space-evenly;
+  min-width: 320.08px;
+  flex: 1 1;
 }

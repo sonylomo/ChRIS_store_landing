@@ -1,7 +1,7 @@
 import WelcomePage from "./Welcome/WelcomePage"
 import WelcomeCTA from "./Welcome/WelcomeCTA"
 import WelcomeDevelopers from "./Welcome/WelcomeDevelopers"
-import WelcomeCategories from "./Welcome/WelcomeCategories"
+import WelcomeCategories from "./Welcome/WelcomeCategory/WelcomeCategories"
 
 const Welcome = () => {
     return (

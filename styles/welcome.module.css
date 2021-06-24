@@ -13,7 +13,7 @@
   height: 90vh;
 }
 
-.welcome>h1 {
+.welcome > h1 {
   /* positioning */
   position: absolute;
   top: 20%;
@@ -22,9 +22,10 @@
 
   font-size: 6em;
   width: 100%;
+  font-weight: 600;
 }
 
-.welcome>h3 {
+.welcome > h3 {
   /* positioning */
   position: absolute;
   top: 40%;
@@ -52,10 +53,10 @@
 
 /* For mobile phones: */
 @media only screen and (max-width: 768px) {
-  .welcome>h1 {
+  .welcome > h1 {
     font-size: 3em;
   }
-  .welcome>h3 {
+  .welcome > h3 {
     font-size: 1.3em;
     top: 45%;
     width: 70%;
@@ -65,7 +66,7 @@
     padding-bottom: 5%;
 
     flex-direction: column;
-    background-color: blue;
+    background-color: #0275d8;
     height: max-content;
   }
 }
