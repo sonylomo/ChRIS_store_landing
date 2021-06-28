@@ -1,5 +1,5 @@
 import { CardGroup } from "react-bootstrap";
-import styles from "../../../../styles/welcomeCategories.module.css";
+import styles from "../../../../styles/home/welcomeCategories.module.css";
 import sampleCategories from "../WelcomeCategory/SampleCategories";
 import WelcomeCategory from "../WelcomeCategory/WelcomeCategory";
 

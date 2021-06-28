@@ -1,4 +1,4 @@
-import styles from "../../../styles/welcome.module.css";
+import styles from "../../../styles/home/welcome.module.css";
 import WelcomeFeature from "../Welcome/WelcomeFeature"
 import freesurferLogo from "../../../public/plugins/freesurfer_90.png"
 import infantLogo from "../../../public/plugins/infant_90.png"

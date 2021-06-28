@@ -1,5 +1,5 @@
 import { Button } from "react-bootstrap";
-import styles from "../../../styles/welcomeDevelopers.module.css";
+import styles from "../../../styles/home/welcomeDevelopers.module.css";
 import Image from "next/image";
 import Brainy from "../../../public/img/brainy_welcome-pointer.png";
 

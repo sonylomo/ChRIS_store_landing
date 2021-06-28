@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { Button, Card } from "react-bootstrap";
-import styles from "../../../../styles/welcomeCategory.module.css";
+import styles from "../../../../styles/home/welcomeCategory.module.css";
 
 const WelcomeCategory = ({ category, ...props }) => (
   <div {...props}>

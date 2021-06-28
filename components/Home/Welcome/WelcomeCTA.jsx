@@ -1,4 +1,4 @@
-import styles from "../../../styles/welcomeCTA.module.css"
+import styles from "../../../styles/home/welcomeCTA.module.css"
 
 const WelcomeCTA = () => {
   return (

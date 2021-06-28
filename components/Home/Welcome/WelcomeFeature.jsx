@@ -1,4 +1,4 @@
-import styles from "../../../styles/welcomeFeature.module.css";
+import styles from "../../../styles/home/welcomeFeature.module.css";
 import Image from "next/image";
 
 const WelcomeFeature = ({ img, name, url, ...props }) => (
