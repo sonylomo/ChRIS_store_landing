@@ -1,24 +1,26 @@
-import {Card} from "react-bootstrap"
+import { Card } from "react-bootstrap";
+import styles from "../../../styles/submit_plugins/step_card.module.css";
+import Link from "next/link";
+import { ArrowRightAlt } from "@material-ui/icons";
 
-const Step_Card = () => {
+const StepCard = ({ Title, Body, Pagelink, ...props }) => {
   return (
-    <div>
-      <Card style={{ width: "18rem" }}>
+    <div {...props}>
+      <Card style={{ width: "22rem" }} className={styles.step_card}>
         <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Subtitle className="mb-2 text-muted">
-            Card Subtitle
-          </Card.Subtitle>
+          <Link href={`/submit-plugins/${Pagelink}`}>
+            <Card.Title>
+              <Card.Link className={styles["card-link"]}>{Title} <ArrowRightAlt /></Card.Link> 
+            </Card.Title>
+          </Link>
           <Card.Text>
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </Card.Text>
-          <Card.Link href="#">Card Link</Card.Link>
-          <Card.Link href="#">Another Link</Card.Link>
         </Card.Body>
       </Card>
     </div>
   );
 };
 
-export default Step_Card;
+export default StepCard;
