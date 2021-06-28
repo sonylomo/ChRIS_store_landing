@@ -6,9 +6,9 @@ import {
   Form,
   FormControl,
   Nav,
-  Navbar
+  Navbar,
 } from "react-bootstrap";
-import LogoImg from "../public/img/chris-plugin-store_logo.png";
+import LogoImg from "../../public/img/chris-plugin-store_logo.png";
 
 const NavBar = () => {
   return (

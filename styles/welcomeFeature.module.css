@@ -1,0 +1,37 @@
+.welcome_feature {
+  /* display */
+  padding: 0.4em;
+  
+}
+
+.welcome_feature_img {
+      /* display */
+  width: 3em;
+  height: 3em;
+
+  /* flex */
+  flex-shrink: 0;
+}
+
+.welcome_feature_text {
+    /* font */
+  font-size: 1.2em;
+  font-weight: 500;
+  line-height: 2;
+
+  /* display */
+  padding: 0.65em;
+}
+
+/* ============================== */
+/* ---------- RESPONSIVE -------- */
+/* ============================== */
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+  .welcome_feature {
+    /* display */
+    display: flex;
+    margin-left: 10vw;
+  }
+}

@@ -1,0 +1,71 @@
+.welcome_category{
+    /* border */
+    border-top: 4px solid #39a5dc;
+    min-height: 679px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+.welcome_category_header {
+    /* padding */
+    padding: 0.4em 0;
+    /* font */
+    font-weight: 500;
+    font-size: 1.7em;
+    text-align: center;
+  }
+  
+  .welcome_category_item {
+    /* display */
+    display: flex;
+  
+    /* padding */
+    padding: 0.4em 0;
+  }
+  
+  .welcome_category_item_img {
+    width: 5em;
+    height: 5em;
+  }
+  
+  .welcome_category_item_body { padding-left: 2em; }
+  
+  .welcome_category_item_name {
+    /* color */
+    color: #39a5dc;
+  
+    /* font */
+    font-size: 1.5em;
+    white-space: pre-wrap;
+  }
+  
+  .welcome_category_item_desc {
+    /* color */
+    color: #8b8d8f;
+  
+    /* font */
+    font-size: 1.1em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .welcome_category_item_tags {
+    /* color */
+    color: #d1d1d1;
+  }
+  
+  /* ============================== */
+  /* ---------- RESPONSIVE -------- */
+  /* ============================== */
+  
+  @media (min-width: 768px)  {
+    .welcome_categories_container > div >.welcome_category{
+      /* display */
+      margin: 0 10px 20px;
+  
+      /* flex */
+      flex: 1;
+      flex-grow: 1;
+    }
+  }
+  
