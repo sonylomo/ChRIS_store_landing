@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 import {
   Button,
   Container,
@@ -25,7 +24,7 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/submit-plugin">Submit Your Plugin</Nav.Link>
+            <Nav.Link href="/submit-plugins">Submit Your Plugin</Nav.Link>
           </Nav>
           <Nav>
             <Form className="d-flex">

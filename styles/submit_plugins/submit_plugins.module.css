@@ -1,15 +1,4 @@
-.submit_plugins {
-  height: max-content;
-  display: flex;
-  justify-content: space-around;
-}
-
-.submit_plugins_main {
-  width: 70%;
-  margin-bottom: 3rem;
-}
-
-.submit_plugins_main > h1 {
+.submit_plugins_main_title {
   font-weight: 800;
   font-size: 50px;
   padding-top: 2rem;
@@ -17,29 +6,22 @@
   text-align: left;
 }
 
-.submit_plugins_main > h1 > span {
+.submit_plugins_main_title > span {
   color: #0d6efd;
 }
 
-.submit_plugins_main > p {
+.submit_plugins_main_text {
   font-size: 20px;
   font-weight: 400;
   padding-bottom: 1rem;
   padding-right: 2.5rem;
 }
 
+/* .submit_plugins_right{
+} */
 .submit_plugins_steps {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
   padding-left: 2rem;
-}
-
-.submit_plugins_sidebar {   
-  width: 30vw;
-  padding: 5%;
-}
-
-.submit_plugins_sidebar_link {
-  color: #546081;
 }

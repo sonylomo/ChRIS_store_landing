@@ -1,3 +1,5 @@
+import Side_Bar from "components/Submit_Plugins/Steps/Side_Bar";
+
 const Step0 = () => {
   return (
     <div>
