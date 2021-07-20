@@ -1,12 +1,11 @@
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "components/Footer/Footer";
-import Submit_Plugins from "components/Submit_Plugins/Submit_Plugins";
-
+import SideTab from "components/Submit_Plugins/Steps/SideTab";
 const SubmitPluginPage = () => {
     return (
         <div>
             <Navbar/>
-            <Submit_Plugins/>
+            <SideTab/>
             <Footer/>
         </div>
     )

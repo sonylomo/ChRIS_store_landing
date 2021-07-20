@@ -1,0 +1,83 @@
+![Set Up ChRIS graphic](/assets/images/library/thumb-setupchris.png)
+
+### Time to run ChRIS!
+
+In this tutorial, you'll get ChRIS up and running on your laptop or workstation. Use these instructions to play around with it, or to get started setting up a development environment so you can start working on it.
+
+> This tutorial is based on the README files for [the ChRIS backend repository](https://github.com/FNNDSC/ChRIS_ultron_backEnd) and [the ChRIS UI repository](https://github.com/FNNDSC/ChRIS_ui). Where these instructions may end up differing with those resources, the README files will always be the most up-to-date and correct. We provide this tutorial as a single comprehensive document to get you started.
+
+### Pre-requisites
+
+*   A laptop or workstation running **Linux** ([Fedora\*](https://hub.docker.com/editions/community/docker-ce-server-fedora), [CentOS](https://hub.docker.com/editions/community/docker-ce-server-centos), [Ubuntu](https://hub.docker.com/editions/community/docker-ce-server-ubuntu), or [Debian](https://hub.docker.com/editions/community/docker-ce-server-debian)), **[Mac OS X 10.14+](https://www.docker.com/products/docker-desktop)**, or **[Windows 10](https://www.docker.com/products/docker-desktop)** (64-bit).
+*   Docker 18.06.0+ with Docker Compose 1.22.0+ (Use link for your distro / OS above.)
+*   (Linux-only) Your OS user should be in a `docker` user group. After installing Docker, do the following in a terminal:
+    1.  `sudo groupadd docker`
+    2.  `sudo usermod -aG docker $USER`
+    3.  Log out, and log back in.
+
+_\* Due to Docker's lack of support for cgroups v2 and DNFTables, there is no official Docker build for Fedora 32. Follow the instructions in [this Fedora Magazine article](https://fedoramagazine.org/docker-and-fedora-32/) to get Docker running on your Fedora 32 system._
+
+### Get the ChRIS backend (CUBE) up and running
+
+After you've met the pre-requisites, you'll need to the ChRIS backend up and running. _(The ChRIS backend is also called CUBE, an acronym for ChRIS Ultron Back End.)_ This is the core of ChRIS, not including its web interface (we'll get that working after.)
+
+We're going to set up a development version of ChRIS. (It will use the default Django development server and therefore is not suitable for production.) _If you are interested in setting ChRIS up for production, [please refer to the README in the CUBE repository](https://github.com/FNNDSC/ChRIS_ultron_backEnd#single-machine-production-deployment)._
+
+Open up a terminal on your system and follow these steps:
+
+1.  **Clone the ChRIS backend repo.**  
+    `git clone https://github.com/FNNDSC/ChRIS_ultron_backend`
+2.  **Go into the ChRIS backend directory.**  
+    `cd ChRIS_ultron_backend`
+3.  **Run CUBE.**
+    *   Run with tests:
+        
+        ./unmake.sh ;
+        sudo rm -fr FS;
+        rm -fr FS;
+        ./make.sh
+        
+    *   Skip unit and integration tests:
+        
+        ./unmake.sh ;
+        sudo rm -fr FS;
+        rm -fr FS;
+        ./make.sh -U -I -s
+        
+
+##### Tearing down the ChRIS backend
+
+You can later remove all the backend containers and release storage volumes with:
+
+$ cd ChRIS\_ultron\_backEnd
+$ sudo rm -r FS
+$ ./unmake.sh
+
+### Get the ChRIS UI frontend up and running
+
+Now that you have CUBE, the ChRIS backend, running, it's time to get the ChRIS web-based UI working. The ChRIS UI is written primarily in TypeScript and [React](https://reactjs.org/), and uses the [PatternFly](https://patternfly.org) React pattern library.
+
+Open up a terminal on your system and follow these steps:
+
+1.  **Clone the ChRIS UI repo.**  
+    `$ git clone https://github.com/FNNDSC/ChRIS_ui.git`
+2.  **Go into the ChRIS UI directory.**  
+    `cd ChRIS_ui`
+3.  **Run the ChRIS UI.**  
+    `docker run --rm -it -v $(pwd):/home/localuser -p 3000:3000 -u $(id -u):$(id -g) --name chris_ui fnndsc/chris_ui:dev`
+4.  **Open the website in a browser.**  
+    `[http://localhost:3000](http://localhost:3000)`
+
+More detailed instructions for the ChRIS UI are available in [the ChRIS UI repository's README](https://github.com/FNNDSC/ChRIS_ui), including how to run interactive tests and build for production.
+
+### What's Next?
+
+Now that you've got a got both the ChRIS backend and ChRIS front end running, why not set up the ChRIS store?
+
+![...](/assets/images/library/thumb-setupchris-store.png)
+
+#### [Set Up the ChRIS Store](/join-us/run-chris-store)
+
+If you want to work on the ChRIS store, or need to test loading plugins into a ChRIS instance, you'll need to get the ChRIS store running on your system. Here's how.
+
+© 2021 GitHub, Inc. Terms Privacy Security Status Docs Contact GitHub Pricing API Training Blog About Loading complete{"mode":"full","isActive":false}

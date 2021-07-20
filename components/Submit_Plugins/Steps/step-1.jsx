@@ -1,7 +1,7 @@
 const Step1 = () => {
   return (
     <div>
-      <h1>1. Create a ChRIS plugin</h1>
+      <h1 style={{fontWeight: "700"}}><span style={{color: "#0d6efd"}}>1.</span> Create a ChRIS plugin</h1>
       <p>
         Sit irure ad non aliquip excepteur. Dolor ullamco in nostrud consequat
         laboris non duis laboris. Ad labore consequat cupidatat eu deserunt

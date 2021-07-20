@@ -1,10 +1,11 @@
 import styles from "../../styles/submit_plugins/submit_plugins.module.css";
 import Step_Card from "./Steps/Step_Card";
-import SideBar from "./Steps/Side_Bar";
+// import SideBar from "./Steps/Side_Bar";
+import SideTab from "./Steps/SideTab";
 
 const Submit_Plugins = () => {
   return (
-    <SideBar>
+    <div>
       <h1 className={styles.submit_plugins_main_title}>
         <span>Get Started: </span>Learn how ChRIS works
       </h1>
@@ -33,7 +34,7 @@ const Submit_Plugins = () => {
           <Step_Card Title="4. Architecture of ChRIS." Pagelink="step-4" />
         </div>
       </div>
-    </SideBar>
+    </div>
   );
 };
 

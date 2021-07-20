@@ -1,7 +1,7 @@
 const Step4 = () => {
   return (
     <div>
-      <h1>4. Architecture of ChRIS.</h1>
+      <h1 style={{fontWeight: "700"}}><span style={{color: "#0d6efd"}}>4.</span> Architecture of ChRIS.</h1>
       <p>
         Aliquip laboris tempor nisi nulla amet occaecat ad cupidatat ipsum do.
         Quis sunt incididunt eiusmod nostrud laborum nostrud reprehenderit
